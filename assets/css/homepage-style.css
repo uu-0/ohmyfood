@@ -1,7 +1,10 @@
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+  }
+  p, h1, h2, h3, .card-badge:hover {
+    cursor: default;
   }
   /******* header *******/
   #header-img {
@@ -172,9 +175,6 @@
     background-size: cover;
     cursor: pointer;
   }
-  .heart:hover {
-    background-image: url("../../assets/images/color-heart.png");
-  }
   .filled {
     background-image: url("../../assets/images/color-heart.png");
   }
@@ -200,9 +200,6 @@
     width: 100px;
     filter: invert(100%);
   }
-  footer p:hover {
-    cursor: pointer;
-  }
   footer .fa-sharp {
     margin-right: 12px;
   }
@@ -212,6 +209,26 @@
   #content-1 p, #content-2 p {
     margin-top: 0;
     margin-bottom: 8px;
+  }
+}
+@media (max-width: 320px) {
+  .r-card {
+    margin-bottom: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .r-card .image-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
   }
 }
 
