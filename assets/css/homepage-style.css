@@ -1,0 +1,218 @@
+@media (max-width: 375px) {
+  body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  /******* header *******/
+  #header-img {
+    display: flex;
+    justify-content: center;
+  }
+  #header-img img {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+  /******* location *******/
+  #location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 7px;
+    background-color: #eaeaea;
+    box-shadow: inset 0 5px 5px -3px #bdbdbd, 0 7px 5px -3px #bdbdbd;
+    color: #353535;
+  }
+  #location input {
+    margin-left: 15px;
+    width: 120px;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+    color: #353535;
+  }
+  #location input:focus {
+    outline: none;
+  }
+  /******* information *******/
+  #informations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #f6f6f6;
+  }
+  #exploration-txt {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  #exploration-txt h1 {
+    padding: 0 40px;
+  }
+  #exploration-txt p {
+    font-weight: 300;
+    font-size: 18px;
+  }
+  #exploration-btn {
+    width: 218px;
+    padding: 15px 0;
+    margin-bottom: 50px;
+    border-radius: 40px;
+    box-shadow: 0 5px 5px -3px #bdbdbd;
+    color: white;
+    background: linear-gradient(#e26fda, #a15adb);
+  }
+  #exploration-btn:hover {
+    cursor: pointer;
+  }
+  /******* fonctionnement *******/
+  #fonctionnement {
+    margin-top: 40px;
+    padding-bottom: 40px;
+    background-color: white;
+  }
+  #fonctionnement h2 {
+    margin-left: 18px;
+    margin-bottom: 30px;
+  }
+  .fonctionnement-element {
+    display: flex;
+    margin: 20px;
+    height: 75px;
+    margin-left: 25px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px -5px #bdbdbd;
+  }
+  .f-card-number {
+    display: flex;
+    position: relative;
+    align-items: center;
+    left: -10px;
+  }
+  .card-number-content {
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 40px;
+    background-color: #9356dc;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+  }
+  .f-card-content {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+  }
+  .f-card-content p {
+    margin-left: 15px;
+    font-weight: 500;
+  }
+  .f-card-content i {
+    margin-left: 10px;
+    color: #7e7e7e;
+  }
+  #f-element-3 i {
+    color: #9356dc;
+  }
+  /******* restaurants *******/
+  #restaurants {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    background-color: #f6f6f6;
+  }
+  #restaurants-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #restaurants h2 {
+    margin-left: 18px;
+  }
+  .r-card {
+    margin-bottom: 18px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    border-radius: 15px;
+    background-color: white;
+  }
+  .r-card .image-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  .r-card-img {
+    width: 100%;
+  }
+  .r-card .card-content {
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .r-card .card-content h3 {
+    margin-bottom: 0;
+  }
+  .r-card .card-content p {
+    margin-top: 5px;
+  }
+  .heart {
+    margin-right: 20px;
+    width: 24px;
+    height: 22px;
+    background-image: url("../../assets/images/heart.png");
+    background-size: cover;
+    cursor: pointer;
+  }
+  .heart:hover {
+    background-image: url("../../assets/images/color-heart.png");
+  }
+  .filled {
+    background-image: url("../../assets/images/color-heart.png");
+  }
+  .card-badge {
+    padding: 7px 12px 5px 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 2px;
+    background-color: #99e2d0;
+    color: #008766;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  /******* footer *******/
+  footer {
+    padding: 30px 0 20px 20px;
+    background-color: #353535;
+    color: white;
+  }
+  footer img {
+    margin-bottom: 15px;
+    width: 100px;
+    filter: invert(100%);
+  }
+  footer p:hover {
+    cursor: pointer;
+  }
+  footer .fa-sharp {
+    margin-right: 12px;
+  }
+  footer .fa-handshake-angle {
+    margin-right: 8px;
+  }
+  #content-1 p, #content-2 p {
+    margin-top: 0;
+    margin-bottom: 8px;
+  }
+}
+
+/*# sourceMappingURL=homepage-style.css.map */
