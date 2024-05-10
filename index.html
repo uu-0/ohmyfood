@@ -3,10 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"/><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/homepage-style.css">
     <title>ohmyfood!</title>
 </head>
 <body>
-    
+    <header>
+        <div id="header-img">
+            <img src="assets/images/ohmyfood.png" alt="logo ohmyfood">
+        </div>
+        <div id="location">
+            <i class="fa-sharp fa-solid fa-location-dot"></i><input type="text" id="city" name="city" value="Paris, Belleville">
+        </div>
+    </header>
+    <main>
+        <section id="informations">
+            <div id="exploration-txt">
+                <h1>
+                    Réservez le menu qui vous convient
+                </h1>
+                <p>
+                    Découvrez des restaurants d’exception, sélectionnés par nos soins.
+                </p>    
+            </div>
+            <div id="exploration-btn">
+                Explorer nos restaurants
+            </div>
+        </section>
+        <section id="fonctionnement">
+            <h2>Fonctionnement</h2>
+            <article id="f-element-1" class="fonctionnement-element">
+                <div class="f-card-number">
+                    <p class="card-number-content">1</p>
+                </div>
+                <div class="f-card-content">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+            </article>
+            <article id="f-element-2" class="fonctionnement-element">
+                <div class="f-card-number">
+                    <p class="card-number-content">2</p>
+                </div>
+                <div class="f-card-content">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <p>Composez votre menu</p>
+                </div>
+            </article>
+            <article id="f-element-3" class="fonctionnement-element">
+                <div class="f-card-number">
+                    <p class="card-number-content">3</p>
+                </div>
+                <div class="f-card-content">
+                    <i class="fa-solid fa-store"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </article>
+        </section>
+        <section id="restaurants">
+            <h2>Restaurants</h2>
+            <div id="restaurants-container"> 
+                <article class="r-card">
+                    <div class="image-container">
+                        <img class="r-card-img" src="assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="plat du restaurant la Palette du Goût à Ménilmontant">
+                        <div class="card-badge">Nouveau</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>La palette du goût</h3>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <div class="heart" onclick="toggleHeart(this)">
+                        </div>
+                    </div>
+                </article>
+                <article class="r-card">
+                    <div class="image-container">
+                        <img class="r-card-img" src="assets/images/stil-u2Lp8tXIcjw-unsplash.jpg" alt="plat du restaurant La note enchantée à Charonne">
+                    </div>
+                    <div class="card-badge">Nouveau</div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>La note enchantée</h3>
+                            <p>Charonne</p>
+                        </div>
+                        <div class="heart" onclick="toggleHeart(this)">
+                        </div>
+                    </div>
+                </article>
+                <article class="r-card">
+                    <div class="image-container">
+                        <img class="r-card-img" src="assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="plat du restaurant À la française à Rouge">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>À la française</h3>
+                            <p>Rouge</p>
+                        </div>
+                        <div class="heart" onclick="toggleHeart(this)">
+                        </div>
+                    </div>
+                </article>
+                <article class="r-card">
+                    <div class="image-container">
+                        <img class="r-card-img" src="assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="plat du restaurant Le délice des sens à Folie-Méricourt">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-text">
+                            <h3>Le délice des sens</h3>
+                            <p>Folie-Méricourt</p>
+                        </div>
+                        <div class="heart" onclick="toggleHeart(this)">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="assets/images/ohmyfood.png" alt="logo ohmyfood">
+        <div id="footer-content">
+            <div id="content-1">
+                <p><i class="fa-sharp fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</p>
+                <p><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</p>
+            </div>
+            <div id="content-2">
+                <p>Mentions légales</p>
+                <p>Contact</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleHeart(heart) {
+          heart.classList.toggle('filled');
+        }
+    </script>
 </body>
 </html>
