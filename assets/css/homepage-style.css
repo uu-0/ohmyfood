@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @media (max-width: 400px) {
   body {
     margin: 0;
@@ -59,6 +60,7 @@
     font-size: 18px;
   }
   #exploration-btn {
+    position: relative;
     width: 218px;
     padding: 15px 0;
     margin-bottom: 50px;
@@ -66,9 +68,18 @@
     box-shadow: 0 5px 5px -3px #bdbdbd;
     color: white;
     background: linear-gradient(#e26fda, #a15adb);
+    cursor: pointer;
+    transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    /******* animation étape 3 *******/
+  }
+  #exploration-btn:hover::after {
+    content: "";
+    border-radius: 40px;
+    transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
   }
   #exploration-btn:hover {
-    cursor: pointer;
+    opacity: 0.8;
+    box-shadow: 0 0 10px 0 rgba(66, 66, 66, 0.5);
   }
   /******* fonctionnement *******/
   #fonctionnement {
@@ -142,6 +153,7 @@
     width: 90%;
     border-radius: 15px;
     background-color: white;
+    cursor: pointer;
   }
   .r-card .image-container {
     display: flex;
