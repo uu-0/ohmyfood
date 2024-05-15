@@ -69,13 +69,13 @@
     color: white;
     background: linear-gradient(#e26fda, #a15adb);
     cursor: pointer;
-    transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, box-shadow 200ms ease-in-out;
     /******* animation étape 3 *******/
   }
   #exploration-btn:hover::after {
     content: "";
     border-radius: 40px;
-    transition: opacity 300ms ease-in-out, box-shadow 300ms ease-in-out;
+    transition: opacity 300ms ease-in-out, box-shadow 200ms ease-in-out;
   }
   #exploration-btn:hover {
     opacity: 0.8;
