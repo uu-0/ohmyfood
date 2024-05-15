@@ -69,7 +69,7 @@
     color: white;
     background: linear-gradient(#e26fda, #a15adb);
     cursor: pointer;
-    transition: opacity 300ms ease-in-out, box-shadow 200ms ease-in-out;
+    transition: opacity 300ms ease-in-out, box-shadow 250ms ease-in-out;
     /******* animation étape 3 *******/
   }
   #exploration-btn:hover::after {
@@ -79,7 +79,7 @@
   }
   #exploration-btn:hover {
     opacity: 0.8;
-    box-shadow: 0 0 10px 0 rgba(66, 66, 66, 0.5);
+    box-shadow: 0 0 5px 0 rgba(66, 66, 66, 0.5);
   }
   /******* fonctionnement *******/
   #fonctionnement {
