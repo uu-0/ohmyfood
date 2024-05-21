@@ -71,7 +71,7 @@ body {
   font-size: 16px;
 }
 
-#exploration-btn {
+.purple-btn {
   position: relative;
   width: 218px;
   padding: 15px 0;
@@ -79,17 +79,17 @@ body {
   border-radius: 40px;
   box-shadow: 0 5px 5px -3px #bdbdbd;
   color: white;
-  background: linear-gradient(#e26fda, #a15adb);
+  background: linear-gradient(#e26fda, #9353dd);
   cursor: pointer;
   transition: opacity 300ms ease-in-out, box-shadow 250ms ease-in-out;
   /******* animation étape 3 *******/
 }
-#exploration-btn:hover::after {
+.purple-btn:hover::after {
   content: "";
   border-radius: 40px;
   transition: opacity 300ms ease-in-out, box-shadow 200ms ease-in-out;
 }
-#exploration-btn:hover {
+.purple-btn:hover {
   opacity: 0.8;
   box-shadow: 0 0 5px 0 rgba(66, 66, 66, 0.5);
 }
@@ -133,7 +133,7 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 40px;
-  background-color: #9356dc;
+  background-color: #9353dd;
   color: white;
   text-align: center;
   font-size: 14px;
@@ -155,7 +155,7 @@ body {
 }
 
 #f-element-3 i {
-  color: #9356dc;
+  color: #9353dd;
 }
 
 /******* restaurants *******/
@@ -176,14 +176,20 @@ body {
 }
 
 .r-card {
-  margin-bottom: 18px;
   position: relative;
+  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
   width: 90%;
   border-radius: 15px;
   background-color: white;
   cursor: pointer;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
 
 .r-card .image-container {
@@ -216,12 +222,17 @@ body {
 }
 
 .heart {
-  margin-right: 20px;
   width: 24px;
   height: 22px;
   background-image: url("../../assets/images/heart.png");
   background-size: cover;
   cursor: pointer;
+}
+
+.r-card .heart {
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
 }
 
 .filled {
@@ -234,7 +245,7 @@ body {
   top: 10px;
   right: 10px;
   border-radius: 2px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #008766;
   font-weight: 500;
   font-size: 14px;
@@ -249,13 +260,18 @@ footer {
   color: white;
 }
 
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
 footer img {
   margin-bottom: 15px;
   width: 100px;
   filter: invert(100%);
 }
 
-#footer-content {
+.footer-content {
   display: flex;
   flex-direction: column;
 }
@@ -268,7 +284,7 @@ footer .fa-handshake-angle {
   margin-right: 8px;
 }
 
-#content-1 p, #content-2 p {
+.content-1 p, .content-2 p {
   margin-top: 0;
   margin-bottom: 8px;
 }
@@ -343,22 +359,22 @@ footer .fa-handshake-angle {
     padding-left: 40px;
     filter: invert(100%);
   }
-  #footer-content {
+  .footer-content {
     flex-direction: row;
   }
-  #content-1, #content-2 {
+  .content-1, .content-2 {
     display: flex;
     flex-direction: row;
   }
-  #content-1 {
+  .content-1 {
     order: 1;
     margin-right: 20px;
   }
-  #content-2 {
+  .content-2 {
     order: 2;
     opacity: 0.8;
   }
-  #content-1 p, #content-2 p {
+  .content-1 p, .content-2 p {
     margin-right: 10px;
   }
   footer .fa-sharp, .fa-handshake-angle {
@@ -382,22 +398,22 @@ footer .fa-handshake-angle {
     padding-left: 80px;
     filter: invert(100%);
   }
-  #footer-content {
+  .footer-content {
     flex-direction: row;
   }
-  #content-1, #content-2 {
+  .content-1, .content-2 {
     display: flex;
     flex-direction: row;
   }
-  #content-1 {
+  .content-1 {
     order: 1;
     margin-right: 20px;
   }
-  #content-2 {
+  .content-2 {
     order: 2;
     opacity: 0.8;
   }
-  #content-1 p, #content-2 p {
+  .content-1 p, .content-2 p {
     margin-right: 10px;
   }
   footer .fa-sharp, .fa-handshake-angle {
