@@ -289,7 +289,7 @@ footer .fa-handshake-angle {
   margin-bottom: 8px;
 }
 
-/******* mobile version 768px-1024px*******/
+/******* tablette version 768px-1024px*******/
 @media (min-width: 768px) {
   /******* header *******/
   #header-img img {
@@ -380,12 +380,20 @@ footer .fa-handshake-angle {
   footer .fa-sharp, .fa-handshake-angle {
     margin-right: 8px;
   }
-  /******* mobile version 1024px-1280px*******/
+  /******* desktop version 1024px-1280px*******/
 }
-@media (min-width: 768px) and (min-width: 1024px) {
+@media (min-width: 768px) and (min-width: 1025px) {
   /******* exploration *******/
   #exploration-txt p {
     font-size: 18px;
+  }
+  #fonctionnement {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #restaurants {
+    padding-left: 10%;
+    padding-right: 10%;
   }
   footer {
     flex-direction: row;
