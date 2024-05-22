@@ -1,0 +1,43 @@
+@import 'ressources.scss';
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.697);
+    width: 100%;
+    height: 100%;
+    animation: fakeLoader 2s forwards;
+}
+
+.spin{
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid $purple;
+    width: 30px;
+    height: 30px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes fakeLoader {
+    0% { visibility: block; }
+    100% { visibility: hidden; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/******* tablette version 768px-1024px (et +)*******/
+@media (min-width: 768px) {
+    .spin{
+        border: 10px solid #f3f3f3;
+        border-top: 10px solid $purple;
+        width: 60px;
+        height: 60px;
+        animation: spin 2s linear infinite;
+    }  
+}
