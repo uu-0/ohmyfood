@@ -8,7 +8,6 @@
 ## caractéristiques:
     - intégration d'une maquette en mobile-first, pour sites web adaptatifs et réactifs
     - implémentation des animations CSS en utilisant SASS, pour enrichir l'expérience utilisateur du site. les animations donneront vie à l'interface et rendront la navigation plus interactive et engageante
-
     - versionning  avec Git et GitHub, pour gestion et collaboration
 
 ## étapes:
