@@ -226,10 +226,12 @@ p, h1, h2, h3, .card-badge:hover{
 
     .heart{
         width: 24px;
-        height: 22px;
-        background-image: url('../../assets/images/heart.png');
-        background-size: cover;
+        height: 24px;
         cursor: pointer;
+        background-image: url('../../assets/images/heart.png');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
     }
 
     .r-card .heart{
@@ -238,7 +240,7 @@ p, h1, h2, h3, .card-badge:hover{
         right: 30px;
     }
 
-    .filled{
+    .heart:hover{
         background-image: url('../../assets/images/color-heart.png');
     }
 
