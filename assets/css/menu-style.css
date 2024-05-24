@@ -48,11 +48,7 @@
 }
 
 .menu .heart {
-  margin-right: 15px;
-}
-
-.menu .heart:hover {
-  background-image: url("../../assets/images/color-heart.png");
+  margin-right: 20px;
 }
 
 /******* menu tilte (entrées plats desserts)*******/
