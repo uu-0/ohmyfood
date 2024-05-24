@@ -223,10 +223,12 @@ body {
 
 .heart {
   width: 24px;
-  height: 22px;
-  background-image: url("../../assets/images/heart.png");
-  background-size: cover;
+  height: 24px;
   cursor: pointer;
+  background-image: url("../../assets/images/heart.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .r-card .heart {
@@ -235,7 +237,7 @@ body {
   right: 30px;
 }
 
-.filled {
+.heart:hover {
   background-image: url("../../assets/images/color-heart.png");
 }
 
