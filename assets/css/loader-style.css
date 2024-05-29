@@ -21,7 +21,7 @@
 
 @keyframes fakeLoader {
   0% {
-    visibility: block;
+    visibility: visible;
   }
   100% {
     visibility: hidden;
