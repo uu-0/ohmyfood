@@ -22,7 +22,7 @@
 }
 
 @keyframes fakeLoader {
-    0% { visibility: block; }
+    0% { visibility: visible; }
     100% { visibility: hidden; }
 }
 
