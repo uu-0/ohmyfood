@@ -231,6 +231,12 @@ body {
   background-repeat: no-repeat;
 }
 
+.r-card .heart {
+  position: absolute;
+  bottom: 35px;
+  right: 30px;
+}
+
 .heart:hover {
   background-image: url("../../assets/images/color-heart.png");
 }
