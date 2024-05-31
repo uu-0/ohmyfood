@@ -80,10 +80,7 @@
     border-radius: 12px;
     box-shadow: 0 5px 5px -3px #bdbdbd;
     background-color: white;
-    animation-name:slideIn;
-    animation-duration: 0.8s;
-    animation-timing-function:ease;
-    animation-fill-mode: both;
+    animation: slideIn 0.8s ease both;
 }
 
 .menu2{
