@@ -77,20 +77,19 @@ p, h1, h2, h3, .card-badge:hover{
         padding: 15px 0;
         margin-bottom: 50px;
         border-radius: 40px;
-        box-shadow: 0 5px 5px -3px $dark-grey;
+        box-shadow: 0 6px 5px -1px rgba(66, 66, 66, 0.2),  /*bottom*/
+        -5px 0 5px -1px rgba(66, 66, 66, 0.1), /*left*/
+        5px 0 5px -1px rgba(66, 66, 66, 0.1);  /*right*/
         color: white;
         background: linear-gradient($light-purple, $purple);
         cursor: pointer;
         transition: opacity 300ms ease-in-out, box-shadow 250ms ease-in-out;
-        /******* animation étape 3 *******/
-        &:hover::after {
-            content: '';
-            border-radius: 40px;
-            transition: opacity 300ms ease-in-out, box-shadow 200ms ease-in-out;
-        }
         &:hover {
             opacity: 0.8;
-            box-shadow: 0 0 5px 0 rgba(66, 66, 66, 0.5);
+            box-shadow: 0 -2px 5px -1px rgba(95, 95, 95, 0.2), /*top*/
+                        0 7px 5px -1px rgba(66, 66, 66, 0.2),  /*bottom*/
+                        -5px 0 5px -1px rgba(66, 66, 66, 0.2), /*left*/
+                        5px 0 5px -1px rgba(66, 66, 66, 0.2);  /*right*/
         }
     }
 
@@ -297,60 +296,7 @@ p, h1, h2, h3, .card-badge:hover{
 
 /******* tablette version 768px-1024px*******/
 @media (min-width: 768px) {
-    /******* header *******/
-    #header-img img{
-        margin-top: 20px;
-        margin-bottom: 20px;
-        width: 15%;
-    }
-
-    /******* location *******/
-    #location {
-        margin-bottom: 0;
-        box-shadow: none;
-    }
-
-    #exploration-txt{
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    
-    #exploration-txt h1{
-        font-size: 30px;
-    } 
-    
-    #exploration-txt p{
-        font-size: 14px;
-    } 
-
-    /******* fonctionnement *******/
-    #fonctionnement{
-        margin-top: 50px;
-        margin-bottom: 30px;
-    }
-
-    #fonctionnement h2{
-        margin-left: 5%;
-    }
-    
-    #f-container{
-        display: flex;
-        flex-direction: row;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    
-    .fonctionnement-element{
-        width: 40%;
-    }
-    
-    /******* restaurants *******/
-    #restaurants {
-        padding-bottom: 0;
-    }
-
     #restaurants-container{
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
